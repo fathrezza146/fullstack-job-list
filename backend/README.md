@@ -17,5 +17,5 @@ Backend service for list jobs api
 ## Running the app
 
 ```
-$ npm run start
+$ npm start
 ```
