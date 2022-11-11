@@ -1,9 +1,10 @@
 const express = require("express");
+const config = require("./config")
 
 async function startServer() {
   const app = express();
 
-  const port = 8080;
+  const port = config.port;
 
   await require("./loaders")(app);
 
