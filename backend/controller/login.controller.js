@@ -23,6 +23,7 @@ const controller = {
       return res.json({
         status: "success",
         token,
+        type: "Bearer"
       });
     } catch (error) {
       return res.status(400).json({ status: "failed", message: error.message });
