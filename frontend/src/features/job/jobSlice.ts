@@ -1,5 +1,4 @@
 import { createSlice, PayloadAction } from "@reduxjs/toolkit";
-import { RootState } from "../../app/store";
 
 export interface JobState {
   params: object
@@ -23,7 +22,5 @@ export const jobSlice = createSlice({
 })
 
 export const { searchJobs } = jobSlice.actions;
-
-export const selectParams = (state: RootState) => state.jobs.params;
 
 export default jobSlice.reducer;

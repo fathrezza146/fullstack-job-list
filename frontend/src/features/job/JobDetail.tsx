@@ -1,7 +1,6 @@
 import React from 'react';
 import { useParams } from 'react-router-dom'
 import { apiGetDetail } from '../../api/api';
-import { Spinner } from '../../app/components/base';
 import noImage from '../../assets/images/no-image.jpeg';
 
 export async function JobDetail() {

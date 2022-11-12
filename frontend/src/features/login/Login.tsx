@@ -21,9 +21,7 @@ export function Login() {
     }
   }
 
-  async function onLogin() {
-    console.log(user);
-    
+  async function onLogin() {    
     let response = await apiLogin({username: "user", password:"abcd"})
 
     if(response && response.status === "success") {
