@@ -16,7 +16,7 @@ module.exports = function () {
     middleware.auth,
     controllers.jobsController.getJobDetail
   );
-  let listRoutes = router.init();
+  let listRoutes = router.init(); 
   app.use(listRoutes);
   return app;
 };
